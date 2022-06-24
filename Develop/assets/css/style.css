@@ -43,7 +43,7 @@ header{
     
 }
 /*Adding pseudo class to avoid the blue/purple color on the visited links*/
-a::before{
+a:before{
         text-decoration: none; 
         color: #7bcecc;
     
