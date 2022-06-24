@@ -5,6 +5,9 @@
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+body{
+    background-color: #fbfbfb;
+}
 /*Header */
 header{
     background-color: #2d4059;
@@ -27,6 +30,7 @@ header{
  display: flex;
  text-align: center;
  justify-content:right;
+ 
 }
 
 .main-menu > li {
@@ -36,11 +40,22 @@ header{
     padding: 10px;
     margin: 10px;
     color: #7bcecc;
+    
 }
 /*Adding pseudo class to avoid the blue/purple color on the visited links*/
+a::before{
+        text-decoration: none; 
+        color: #7bcecc;
+    
+}
 a:visited { 
     text-decoration: none; 
     color: #7bcecc;
+}
+
+a:hover
+{
+    color: antiquewhite;
 }
 .hero-banner{
     height: 200px;
@@ -63,11 +78,10 @@ a:visited {
 
 .page-section{
     color:#2d4059;
+    background-color: #fbfbfb;
     
 }
-main{
-    background-color: #fbfbfb;
-}
+
 .page-headings{
     display: flex;
     float: left;
@@ -76,6 +90,8 @@ main{
     font-size: 60px;
    text-align: right;
    color:#2d4059;
+   background-color: #fbfbfb;
+   
 }
 .container{
     margin-left: 300px;
@@ -89,50 +105,70 @@ main{
      background-color: #fbfbfb;
      display: flex;
      justify-content: space-evenly;
+     flex-wrap: wrap;
+     
+    
 }
   
 .container{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
-    
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  
+ 
 }
 
-.project1{
-    height: 150px;
-    width: 50%; 
-    border: 8px solid #7bcecc;
+
+.projects{
+    margin: 30px 10px;
+    width: 48%;
+    flex-direction: row;
+    
+}
+.projects1
+{
+    margin: 30px 10px;
+    width: 48%;
+    flex-direction: row;
+    flex-basis: 98%;
+}
+.proj1{
+   
+    height: 400px;
+     flex-basis: 100%;
+     width: 100%;
+    border: 5px solid #7bcecc;
     background-repeat: no-repeat;
     background-image: url(../images/Proj1.jpg);  
-   
+    
+    
+
 }
-.project2{
+.proj2{
     height: 150px;
-    width: 50%; 
-    border: 8px solid #7bcecc;
+   
+    border: 5px solid #7bcecc;
     background-repeat: no-repeat;
     background-image: url(../images/Proj2.jpg);  
    
 }
-.project3{
+.proj3{
     height: 150px;
-    width: 50%; 
-    border: 8px solid #7bcecc;
+    border: 5px solid #7bcecc;
     background-repeat: no-repeat;
     background-image: url(../images/Proj3.jpg);  
 }
-.project4{
+.proj4{
     height: 150px;
-    width: 50%; 
-    border: 8px solid #7bcecc;
+    border: 5px solid #7bcecc;
     background-repeat: no-repeat;
     background-image: url(../images/Proj4.jpg);  
 
 }
-.project5{
+.proj5{
     height: 150px;
-    width: 50%; 
-    border: 8px solid #7bcecc;
+    border: 5px solid #7bcecc;
     background-repeat: no-repeat;
     background-image: url(../images/Proj5.jpg);  
 }
@@ -150,12 +186,13 @@ h3{
     display: flex;
     margin-right: 0;
     padding: 10px;
-    justify-content: left;
+    justify-content: flex-start;
     position: relative;
     border: 8px solid #7bcecc;
     background: #7bcecc;
     padding: 10px;
     float: left;
+    
     margin-top: 45px;
     margin-bottom: 20px;
     color: #2d4059;
@@ -169,14 +206,29 @@ h3{
     display: flex;
     float: inline-start;
     justify-content: space-evenly;
+    color: #2d4059 ;
+    background-color: #fbfbfb;
 }
 .contact-details > li {
     list-style-type: none;
     display: inline;
     margin-left: 25px;
     color: #2d4059 ;
+    padding: 40px;
     list-style-type: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.li1 > a  {
+    color: #2d4059;
+}
+.li2 > a  {
+    color: #2d4059;
+}.li3 > a  {
+    color: #2d4059;
+}.li4 > a  {
+    color: #2d4059;
+}.li5 > a  {
+    color: #2d4059;
 }
 
 
@@ -185,8 +237,33 @@ h3{
       flex-direction: column;
     }
   
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .page-section
+    {
+        flex-direction: column;
+    }
     main {
-      max-width: 1200px;
+      max-width: 776px;
+    }
+    body{
+        max-width: 776px;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    header {
+      flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    main {
+      max-width: 576px;
     }
   }
   
