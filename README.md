@@ -35,6 +35,11 @@ Assets\Screenshots\1.PNG
 Assets\Screenshots\2.PNG
 Assets\Screenshots\3.PNG
 
+Wireframe reference:
+Assets\Wireframe\Mobile.png
+Assets\Wireframe\Tablet.png
+Assets\Wireframe\Webpage.png
+
 Links:
 Github published Link: https://akshu3011.github.io/Portfolio/
 Github Repository Link: https://github.com/Akshu3011/Portfolio.git
