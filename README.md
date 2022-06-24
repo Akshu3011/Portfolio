@@ -30,8 +30,12 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 Screenshots:
-
+The screenshots of the final website:
+Assets\Screenshots\1.PNG
+Assets\Screenshots\2.PNG
+Assets\Screenshots\3.PNG
 
 Links:
-Github Link: https://akshu3011.github.io/Portfolio/
+Github published Link: https://akshu3011.github.io/Portfolio/
+Github Repository Link: https://github.com/Akshu3011/Portfolio.git
 

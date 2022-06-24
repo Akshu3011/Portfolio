@@ -154,7 +154,7 @@ article{
     border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj1.jpg);  
-    
+    opacity: 0.8;
     
 
 }
@@ -164,6 +164,7 @@ article{
     border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj2.jpg);  
+    opacity: 0.8;
    
 }
 .proj3{
@@ -171,12 +172,14 @@ article{
     border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj3.jpg);  
+    opacity: 0.8;
 }
 .proj4{
     height: 150px;
     border: 5px solid var(--light);
     background-repeat: no-repeat;
-    background-image: url(../images/Proj4.jpg);  
+    background-image: url(../images/Proj4.jpg); 
+    opacity: 0.8; 
 
 }
 .proj5{
@@ -184,15 +187,15 @@ article{
     border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj5.jpg);  
+    opacity: 0.8;
 }
 .projects :hover{
-    opacity: 0.8;
+    opacity: 1;
     
 
 }
-.projects1:hover
-{
-    opacity: 0.8;
+.projects1 :hover{
+    opacity: 1;
 }
 
 /*
