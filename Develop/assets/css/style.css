@@ -109,6 +109,8 @@ a:hover
      
     
 }
+
+
   
 .container{
     display: flex;
@@ -118,26 +120,34 @@ a:hover
   
  
 }
-
-
+.myImage
+{
+    float: left;
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px solid #7bcecc;
+}
+article{
+    padding: 10px;
+}
 .projects{
     margin: 30px 10px;
-    width: 48%;
+    width: 45%;
     flex-direction: row;
     
 }
 .projects1
 {
     margin: 30px 10px;
-    width: 48%;
+    width: 45%;
     flex-direction: row;
     flex-basis: 98%;
 }
 .proj1{
    
     height: 400px;
-     flex-basis: 100%;
-     width: 100%;
+    flex-basis: 100%;
+    width: 94%;
     border: 5px solid #7bcecc;
     background-repeat: no-repeat;
     background-image: url(../images/Proj1.jpg);  
@@ -192,13 +202,14 @@ h3{
     background: #7bcecc;
     padding: 10px;
     float: left;
-    
     margin-top: 45px;
     margin-bottom: 20px;
     color: #2d4059;
     
 }
-
+.heading1{
+    margin-top: 250px;
+}
 
 .contact > ul
 {
@@ -214,21 +225,24 @@ h3{
     display: inline;
     margin-left: 25px;
     color: #2d4059 ;
-    padding: 40px;
+    
     list-style-type: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.li1 > a  {
+.links > a  {
     color: #2d4059;
 }
-.li2 > a  {
+.links > a :hover {
+    color: antiquewhite;
+}
+.links > a :before{
+    text-decoration: none; 
     color: #2d4059;
-}.li3 > a  {
-    color: #2d4059;
-}.li4 > a  {
-    color: #2d4059;
-}.li5 > a  {
-    color: #2d4059;
+
+}
+.links > a :visited { 
+text-decoration: none; 
+color: #2d4059;
 }
 
 
@@ -246,9 +260,7 @@ h3{
     {
         flex-direction: column;
     }
-    main {
-      max-width: 776px;
-    }
+   
     body{
         max-width: 776px;
     }
@@ -258,11 +270,15 @@ h3{
     header {
       flex-direction: column;
     }
-    .container{
+    .container .contact-details{
         flex-direction: column;
         justify-content: center;
     }
-    main {
+    .test{
+        flex-direction: column;
+        justify-content: center;
+    }
+    body {
       max-width: 576px;
     }
   }
