@@ -251,7 +251,7 @@ color: #2d4059;
       flex-direction: column;
     }
   
-    .container{
+    .container .projects .contact-details{
         flex-direction: column;
         justify-content: center;
         
@@ -270,7 +270,7 @@ color: #2d4059;
     header {
       flex-direction: column;
     }
-    .container .contact-details{
+    .container .projects .contact-details .proj1{
         flex-direction: column;
         justify-content: center;
     }
