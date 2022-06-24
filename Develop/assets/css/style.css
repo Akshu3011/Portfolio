@@ -3,10 +3,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 /*Header */
 header{
     background-color: #2d4059;
@@ -31,7 +29,7 @@ header{
  justify-content:right;
 }
 
-li {
+.main-menu > li {
    font-size: 20px;   
     list-style-type: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -91,8 +89,61 @@ main{
      background-color: #fbfbfb;
 }
   
-.flex-container > div{
-    border: 5px solid blueviolet;
-    background-color: aqua;
+
+.projects{
+   
+    height: 150px;
+    width: 50%; 
+    border: 8px solid #7bcecc;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/Proj1.jpg);
+
+}
+/*
+.project2{
+    background-image: url(../images/Proj2.jpg);
+    height: 150px;
+    width: 50%;
+   
+    border: 8px solid #7bcecc;
+
+}*/
+
+h3{
+    display: flex;
+    margin-right: 0;
+    padding: 10px;
+    justify-content: left;
+    position: relative;
+    border: 8px solid #7bcecc;
+    background: #7bcecc;
+    padding: 10px;
+    float: left;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: #2d4059;
+    
 }
 
+.contact > ul
+{
+    text-align: left;
+    display: flex;
+    float: inline-start;
+    justify-content: space-evenly;
+}
+.contact-details > li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 25px;
+    color: #2d4059 ;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+   
+  
+   
