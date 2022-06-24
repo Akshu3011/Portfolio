@@ -87,19 +87,54 @@ main{
      border: 1px solid #fbfbfb;;
      border-left: #2d4059 solid 5px;
      background-color: #fbfbfb;
+     display: flex;
+     justify-content: space-evenly;
 }
   
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    
+}
 
-.projects{
-   
+.project1{
     height: 150px;
     width: 50%; 
     border: 8px solid #7bcecc;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    background-image: url(../images/Proj1.jpg);
+    background-image: url(../images/Proj1.jpg);  
+   
+}
+.project2{
+    height: 150px;
+    width: 50%; 
+    border: 8px solid #7bcecc;
+    background-repeat: no-repeat;
+    background-image: url(../images/Proj2.jpg);  
+   
+}
+.project3{
+    height: 150px;
+    width: 50%; 
+    border: 8px solid #7bcecc;
+    background-repeat: no-repeat;
+    background-image: url(../images/Proj3.jpg);  
+}
+.project4{
+    height: 150px;
+    width: 50%; 
+    border: 8px solid #7bcecc;
+    background-repeat: no-repeat;
+    background-image: url(../images/Proj4.jpg);  
 
+}
+.project5{
+    height: 150px;
+    width: 50%; 
+    border: 8px solid #7bcecc;
+    background-repeat: no-repeat;
+    background-image: url(../images/Proj5.jpg);  
 }
 /*
 .project2{
@@ -127,6 +162,7 @@ h3{
     
 }
 
+
 .contact > ul
 {
     text-align: left;
@@ -144,6 +180,14 @@ h3{
 }
 
 
-   
+@media screen and (max-width: 776px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
   
    
