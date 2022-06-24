@@ -4,13 +4,16 @@
     padding: 0;
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --dark: #2d4059;
+    --light: #7bcecc;
+    --background:#fbfbfb;
 }
 body{
-    background-color: #fbfbfb;
+    background-color: var(--background);
 }
 /*Header */
 header{
-    background-color: #2d4059;
+    background-color: var(--dark);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -20,9 +23,9 @@ header{
     padding: 5px;
     margin: 10px;
     margin-left: 0;
-    background:#7bcecc;
+    background:var(--light);
     text-align: center;
-    color: #2d4059;
+    color: var(--dark);
     padding-left: 50px;
 }
 
@@ -32,10 +35,7 @@ header{
  justify-content:right;
  
 }
-a:before{
-    text-decoration: none; 
-    color: #7bcecc;
-}
+
 
 .main-menu > li {
    font-size: 20px;   
@@ -43,19 +43,23 @@ a:before{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     margin: 10px;
-    color: #7bcecc;
+    color: var(--light);
     
+}
+a:link{
+    text-decoration: none; 
+    color: var(--light);
 }
 /*Adding pseudo class to avoid the blue/purple color on the visited links*/
 a:visited { 
     text-decoration: none; 
-    color: #7bcecc;
+    color: var(--light);
+}
+a:before{
+    text-decoration: none; 
+    color: var(--light);
 }
 
-a:hover
-{
-    color: antiquewhite;
-}
 .hero-banner{
     height: 200px;
     width: 100%;
@@ -77,7 +81,7 @@ a:hover
 
 .page-section{
     color:#2d4059;
-    background-color: #fbfbfb;
+    background-color: var(--background);
     
 }
 
@@ -89,7 +93,7 @@ a:hover
     font-size: 60px;
    text-align: right;
    color:#2d4059;
-   background-color: #fbfbfb;
+   background-color: var(--background);
    
 }
 .container{
@@ -99,9 +103,9 @@ a:hover
      font-family: Helvetica, sans-serif;
      color:#2d4059;
      font-size: 1.5em;
-     border: 1px solid #fbfbfb;;
-     border-left: #2d4059 solid 5px;
-     background-color: #fbfbfb;
+     border: 1px solid var(--background);;
+     border-left: var(--dark) solid 5px;
+     
      display: flex;
      justify-content: space-evenly;
      flex-wrap: wrap;
@@ -124,7 +128,7 @@ a:hover
     float: left;
     padding: 10px;
     margin-right: 20px;
-    border: 2px solid #7bcecc;
+    border: 2px solid var(--light);
 }
 article{
     padding: 10px;
@@ -147,7 +151,7 @@ article{
     height: 400px;
     flex-basis: 100%;
     width: 94%;
-    border: 5px solid #7bcecc;
+    border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj1.jpg);  
     
@@ -157,30 +161,40 @@ article{
 .proj2{
     height: 150px;
    
-    border: 5px solid #7bcecc;
+    border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj2.jpg);  
    
 }
 .proj3{
     height: 150px;
-    border: 5px solid #7bcecc;
+    border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj3.jpg);  
 }
 .proj4{
     height: 150px;
-    border: 5px solid #7bcecc;
+    border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj4.jpg);  
 
 }
 .proj5{
     height: 150px;
-    border: 5px solid #7bcecc;
+    border: 5px solid var(--light);
     background-repeat: no-repeat;
     background-image: url(../images/Proj5.jpg);  
 }
+.projects :hover{
+    opacity: 0.8;
+    
+
+}
+.projects1:hover
+{
+    opacity: 0.8;
+}
+
 /*
 .project2{
     background-image: url(../images/Proj2.jpg);
@@ -197,15 +211,16 @@ h3{
     padding: 10px;
     justify-content: flex-start;
     position: relative;
-    border: 8px solid #7bcecc;
-    background: #7bcecc;
+    border: 8px solid var(--light);
+    background: var(--light);
     padding: 10px;
     float: left;
     margin-top: 45px;
     margin-bottom: 20px;
-    color: #2d4059;
+    color: var(--dark);
     
 }
+
 .heading1{
     margin-top: 250px;
 }
@@ -216,37 +231,51 @@ h3{
     display: flex;
     float: inline-start;
     justify-content: space-evenly;
-    color: #2d4059 ;
-    background-color: #fbfbfb;
+    color: var(--dark);
+    background-color: var(--background);
 }
 .contact-details > li {
     list-style-type: none;
     display: inline;
     margin-left: 25px;
-    color: #2d4059 ;
-    
+    color: var(--dark);
+    text-decoration: underline;
     list-style-type: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .links > a  {
-    color: #2d4059;
+    color: var(--dark);
 }
 .links > a :before{
     text-decoration: none; 
-    color: #2d4059;
+    color: var(--dark);
 
 }
 .links > a :visited { 
 text-decoration: none; 
-color: #2d4059;
+color: var(--dark);
 }
 
+a {
+    box-shadow: inset 0 0 0 0 var(--light);
+    color:#7bcecc;
+    
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  a:hover {
+    box-shadow: inset 500px 0 0 0 var(--light);
+    color:var(--dark);
+  }
 
 @media screen and (max-width: 776px) {
     header {
       flex-direction: column;
     }
   
+    .page-headings{
+        flex-direction: column;
+        justify-content: center;
+    }
     .container .projects .contact-details{
         flex-direction: column;
         justify-content: center;
@@ -265,6 +294,10 @@ color: #2d4059;
 @media screen and (max-width: 576px) {
     header {
       flex-direction: column;
+    }
+    .page-headings{
+        flex-direction: column;
+        justify-content: center;
     }
     .container .projects .contact-details .proj1{
         flex-direction: column;
